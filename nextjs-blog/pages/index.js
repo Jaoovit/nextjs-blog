@@ -3,9 +3,8 @@ function Header({ title }) {
     return <h1>{title ? title : 'Default title'}</h1>
 }
 
-function Homepage() {
+export default function Homepage() {
     const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
-
     const [likes, setLikes] = React.useStage(0);
 
     function handleClick() {
